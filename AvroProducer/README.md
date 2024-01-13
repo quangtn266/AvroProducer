@@ -35,7 +35,7 @@ kafka-server-start.sh ~/kafka_2.13-3.6.0/config/kraft/server.properties
 5. Start Schema-Registry
 
 ```
-schema-registry-start config/schema-registry.properties
+schema-registry-start ./etc/schema-registry/schema-registry.properties
 ```
 
 6. Create a topic "clicks".
