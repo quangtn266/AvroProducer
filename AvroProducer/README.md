@@ -47,7 +47,7 @@ kafka-topics.sh --create --boostrap-server localhost:9092 --replication-factor 1
 7. Run the producer to produce 100 clicks:
 
 ```
-java -cp target/uber-ClickstreamGenerator-1.0-SNAPSHOT.jar com.github.quangtn.kafka.avroclicks.AvroClicksProducer 100 http://localhost:8081
+java -cp target/uber-ClickstreamGenerator-1.0-SNAPSHOT.jar com.github.quangtn.kafka.avroconsumer.AvroClicksSessionizer 100 http://localhost:8081
 ```
 
 8. Validate the result by using the avro console consumer (part of the schema repository):
